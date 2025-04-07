@@ -8,6 +8,7 @@ const MovieList = () => {
         <li key={index}>
           {movie.title} ({movie.year})
         </li>
+        
       ))}
     </ul>
   );

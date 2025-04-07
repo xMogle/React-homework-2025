@@ -1,7 +1,7 @@
 
 body {
-    background-color: #333;
     color: white;
+    background-color: #333;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 2rem;
@@ -12,6 +12,7 @@ body {
     color: #ffffff;
   }
   
+
   ul {
     padding-left: 1rem;
     list-style-type: disc;
