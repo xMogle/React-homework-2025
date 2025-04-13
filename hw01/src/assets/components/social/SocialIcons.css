@@ -1,0 +1,23 @@
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #d0d5dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .social-icon:hover {
+    border-color: #35B8BE;
+    background-color: #f0fafa;
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
