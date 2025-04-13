@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+.menu-container {
+display: flex;
+justify-content: center;
+}
+
+.menu-page {
+  background: #f5fafa;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-page::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  background-color: white;
+  transform: rotate(-2deg);
+  z-index: 0;
+  transform-origin: top left;
+}
+
+.menu-page h1 {
+  padding-top: 150px;
+  color: #35B8BE;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 1.65px;
+  margin-bottom: 0.5rem;
+  font-family: 'Inter' sans-serif;
+}
+
+.menu-page p {
+  size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  max-width: 466px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #546285;
+}
+
+.tooltip {
+  color: #00bfa6;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filters button {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 132px;
+  height: 52px;
+  color: #222222;
+
+  background-color: white;
+  border: 1px solid rgba(97, 114, 131, 0.2);
+  border-radius: 6px;
+  transition: all 0.2 ease;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background-color: #35B8BE;
+  color: white;
+  border: none;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 580px);
+  column-gap: 72px;
+  row-gap: 30px;
+  justify-content: center;
+  margin: 40px auto;
+  transform: translateX(-20px);
+}
+
+.menu-card {
+  width: 580px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgba(53, 184, 190, 0.15);
+  border-radius: 6px;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e0e0e0;
+}
+
+.menu-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  
+}
+
+.menu-content {
+  align-items: flex-start;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-content-header {
+  width:100% ;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.menu-content-header h3 {
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #08090A;
+  margin: 0;
+}
+
+.menu-content-header .price {
+  font-size: 15px;
+  color: #35B8BE;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.menu-content p {
+  text-align: left;
+  letter-spacing: 0.32px;
+  line-height: 24px;
+  max-width: 350px;
+  color: #546285;
+  font-size: 14px;
+  margin: 12px 0 16px;
+}
+
+.menu-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-actions input {
+  width: 60px;
+  height: 45px;
+  border-radius: 6px;
+  border: 1px solid #DDDDDD;
+  background-color: #FAFAFA;
+  text-align: center;
+  font-size: 16px;
+}
+
+.menu-actions button {
+  
+  width: 147px;
+  height: 45px;
+  background-color: #35B8BE;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.menu-actions button:disabled {
+  background-color: #A7DADC;
+  cursor: not-allowed;
+}
+
+.see-more-button{
+  justify-content: center;
+  padding-top: 50px;
+  display: flex;
+  position: relative;
+}
+
+.see-more-btn{
+  position: relative;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 132px;
+  height: 52px;
+  color: #222222;
+  z-index: 1;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid rgba(97, 114, 131, 0.2);
+  border-radius: 6px;
+  transition: all 0.2 ease;
+  cursor: pointer;
+  align-items: center;
+}
+
+.see-more-btn:hover,
+.see-more-btn:active{
+  background-color: #35B8BE;
+  color: white;
+  border: none;
+}
+
+.see-more-wave{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  color: #FFFFFF;
+}
