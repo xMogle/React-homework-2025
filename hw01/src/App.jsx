@@ -1,14 +1,10 @@
-
 import React from "react";
-import MovieList from "./assets/components/Movie";
+import MenuPage from "/src/assets/components/pages/MenuPage";
+
+
 
 function App() {
-  return (
-    <div>
-      <h1>My Favorite Movies</h1>
-      <MovieList />
-    </div>
-  );
+  return <MenuPage />;
 }
 
 export default App;
