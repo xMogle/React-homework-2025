@@ -47,7 +47,7 @@ const burgers = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     price: '8.00',
     image: burgerClassic,
-    category: 'Desert'
+    category: 'Dessert'
   },
 ];
 
